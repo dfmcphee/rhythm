@@ -1,0 +1,57 @@
+// Font family
+html,
+body {
+  color: $body-color;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+// Headings
+h1 {
+  color: $heading-color;
+  font-size: 2rem;
+}
+
+h2 {
+  color: $heading-color;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: $heading-color;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: $heading-color;
+  font-size: 1.3rem;
+}
+
+h5 {
+  color: $heading-color;
+  font-size: 1.1rem;
+}
+
+h6 {
+  color: $heading-color;
+  font-size: 1rem;
+}
+
+// Utilities
+.lead {
+  font-size: 2em;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+.center-aligned {
+  text-align: center;
+}
+

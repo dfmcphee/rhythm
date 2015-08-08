@@ -1,0 +1,87 @@
+// Container
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width--large;
+  padding: 0 $default-spacing;
+}
+
+// Grid
+
+.grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: -1 * $default-spacing 0 $default-spacing -1 * $default-spacing;
+}
+
+.grid--wrappable {
+  flex-wrap: wrap;
+}
+
+.grid--vertically-aligned {
+  align-items: center;
+}
+
+.grid--right-aligned {
+  justify-content: flex-end;
+}
+
+.grid--center-aligned {
+  justify-content: center;
+}
+
+// Grid items
+
+.grid__item {
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  max-width: 100%;
+  padding: $default-spacing 0 0 $default-spacing;
+}
+
+.grid__item--fixed-width {
+  flex: 0 0 auto;
+}
+
+.grid__item--half {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.grid__item--third {
+  flex-grow: 1;
+  width: 33.33%;
+}
+
+.grid__item--two-thirds {
+  flex-grow: 1;
+  width: 66.66%;
+}
+
+.grid__item--quarter {
+  flex-grow: 1;
+  width: 25%;
+}
+
+.grid__item--three-quarters {
+  flex-grow: 1;
+  width: 75%;
+}
+
+.grid__item--full-width {
+  flex-grow: 1;
+  width: 100%;
+}
+
+@media only screen and (max-width : 580px) {
+  .grid {
+    flex-wrap: wrap;
+  }
+
+  .grid__item {
+    flex-grow: 1;
+    width: 100%;
+  }
+}

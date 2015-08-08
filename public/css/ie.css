@@ -1,0 +1,7 @@
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid__item {
+  float: left; }

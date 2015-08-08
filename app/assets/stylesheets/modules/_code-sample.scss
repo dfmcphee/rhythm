@@ -1,0 +1,9 @@
+.code-sample {
+  background: $light-grey;
+  display: block;
+  font-size: 1.2rem;
+  overflow: hidden;
+  padding: $default-spacing;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
