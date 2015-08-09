@@ -5,3 +5,8 @@
 
 .grid__item {
   float: left; }
+
+.grid--vertically-centered .grid__item {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }

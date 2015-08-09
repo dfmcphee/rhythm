@@ -1,0 +1,20 @@
+.button {
+  text-decoration: none;
+  background: $primary;
+  color: $white;
+  padding: $default-spacing;
+}
+
+.button--block {
+  display: block;
+  width: calc(100% - #{$default-spacing--double});
+  text-align: center;
+}
+
+.button--secondary {
+  background: $secondary;
+}
+
+.button--info {
+  background: $info;
+}

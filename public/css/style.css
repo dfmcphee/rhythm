@@ -70,7 +70,7 @@ h6 {
 .grid--wrappable {
   flex-wrap: wrap; }
 
-.grid--vertically-aligned {
+.grid--vertically-centered {
   align-items: center; }
 
 .grid--right-aligned {
@@ -112,6 +112,21 @@ h6 {
   flex-grow: 1;
   width: 100%; }
 
+.grid--more-spacing {
+  margin: -2rem 0 2rem -2rem; }
+  .grid--more-spacing .grid__item {
+    padding: 2rem 0 0 2rem; }
+
+.grid--less-spacing {
+  margin: -0.5rem 0 0.5rem -0.5rem; }
+  .grid--less-spacing .grid__item {
+    padding: 0.5rem 0 0 0.5rem; }
+
+.grid--no-spacing {
+  margin: 0; }
+  .grid--no-spacing .grid__item {
+    padding: 0; }
+
 @media only screen and (max-width: 580px) {
   .grid {
     flex-wrap: wrap; }
@@ -127,3 +142,23 @@ h6 {
   padding: 1rem;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+.button {
+  text-decoration: none;
+  background: #3023ae;
+  color: #f3f3f3;
+  padding: 1rem; }
+
+.button--block {
+  display: block;
+  width: calc(100% - 2rem);
+  text-align: center; }
+
+.button--secondary {
+  background: #5c38ba; }
+
+.button--info {
+  background: #9956cb; }
+
+.card {
+  padding-bottom: 1rem; }
