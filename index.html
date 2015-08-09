@@ -1,154 +1,220 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Rhythm</title>
-    <meta name="Description" content="The ultra-lightweight responsive CSS grid system" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-    <!--[if lte IE 9]>
-  	 <link rel="stylesheet" type="text/css" href="css/ie.css" />
-    <![endif]-->
-  </head>
-  <body>
-    <header class="container">
-      <div class="grid">
-        <div class="grid__item">
-          <h1><img src="img/logo.svg" alt="rhythm"/></h1>
-          <p class="lead">The ultra-lightweight responsive CSS grid system.</p>
-          <p>Less than <strong>2 KB</strong> of uncompressed CSS.</p>
-          <p>Rhythm uses flexbox for a smarter grid system but it includes a fallback for graceful degradation in IE 8-9.</p>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rhythm</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lte IE 9]>
+	 <link rel="stylesheet" type="text/css" href="/css/ie.css" />
+  <![endif]-->
+  
+</head>
+<body>
 
-    <section class="container">
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Basic grid</h3>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
-      </div>
 
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Proportional grids</h3>
+<div class="container">
+  <header class="card">
+    <div class="grid">
+      <div class="grid__item">
+        <h1><img src="img/logo.svg" alt="rhythm"/></h1>
+        <p class="lead">The ultra-lightweight responsive CSS grid system.</p>
+        <p>In less than <strong>2 KB</strong> of uncompressed CSS, rhythm uses flexbox for a smarter, more flexible grid system.</p>
+        <p>It also includes a fallback for graceful degradation in IE 8-9.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item">
+        <div class="grid">
+          <div class="grid__item">
+            <a href="css/rhythm.css" class="button button--block">Download CSS</a>
+          </div>
+          <div class="grid__item">
+            <a href="css/rhythm.min.css" class="button button--block button--secondary">Download Compressed CSS</a>
+          </div>
+          <div class="grid__item">
+            <a href="https://github.com/dfmcphee/rhythm" class="button button--block button--info">View on Github</a>
+          </div>
         </div>
       </div>
-      <div class="grid">
-        <div class="grid__item grid__item--half">
-          <code class="code-sample">grid__item--half</code>
-        </div>
-        <div class="grid__item grid__item--half">
-          <code class="code-sample">grid__item--half</code>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="grid__item grid__item--third">
-          <code class="code-sample">grid__item--third</code>
-        </div>
-        <div class="grid__item grid__item--two-thirds">
-          <code class="code-sample">grid__item--two-thirds</code>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="grid__item grid__item--quarter">
-          <code class="code-sample">grid__item--quarter</code>
-        </div>
-        <div class="grid__item grid__item--three-quarters">
-          <code class="code-sample">grid__item--three-quarters</code>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="grid__item grid__item--full-width">
-          <code class="code-sample">grid__item--full-width</code>
-        </div>
-      </div>
+    </div>
+  </header>
 
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Wrappable grid</h3>
-        </div>
+  <section class="card">
+    <div class="grid">
+      <div class="grid__item">
+        <h2>Grid variations</h2>
       </div>
-      <div class="grid grid--wrappable">
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Basic grid</h3>
       </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+    </div>
 
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Fixed width items</h3>
-        </div>
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Proportional grids</h3>
       </div>
-      <div class="grid">
-        <div class="grid__item grid__item--fixed-width">
-          <code class="code-sample">grid__item--fixed-width</code>
-        </div>
-        <div class="grid__item grid__item--fixed-width">
-          <code class="code-sample">grid__item--fixed-width</code>
-        </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item--half">
+        <code class="code-sample">grid__item--half</code>
       </div>
+      <div class="grid__item grid__item--half">
+        <code class="code-sample">grid__item--half</code>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item--third">
+        <code class="code-sample">grid__item--third</code>
+      </div>
+      <div class="grid__item grid__item--two-thirds">
+        <code class="code-sample">grid__item--two-thirds</code>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item--quarter">
+        <code class="code-sample">grid__item--quarter</code>
+      </div>
+      <div class="grid__item grid__item--three-quarters">
+        <code class="code-sample">grid__item--three-quarters</code>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item--full-width">
+        <code class="code-sample">grid__item--full-width</code>
+      </div>
+    </div>
 
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Vertically aligned grid</h3>
-        </div>
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Wrappable grid</h3>
       </div>
-      <div class="grid grid--vertically-aligned">
-        <div class="grid__item">
-          <code class="code-sample">grid__item</code>
-        </div>
-        <div class="grid__item">
-          <code class="code-sample" style="height: 5rem;">grid__item</code>
-        </div>
+    </div>
+    <div class="grid grid--wrappable">
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
       </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+    </div>
 
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Right aligned grid</h3>
-        </div>
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Fixed width items</h3>
       </div>
-      <div class="grid grid--right-aligned">
-        <div class="grid__item grid__item--fixed-width">
-          <code class="code-sample">grid__item--fixed-width</code>
-        </div>
-        <div class="grid__item grid__item--fixed-width">
-          <code class="code-sample">grid__item--fixed-width</code>
-        </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item--fixed-width">
+        <code class="code-sample">grid__item--fixed-width</code>
       </div>
+      <div class="grid__item grid__item--fixed-width">
+        <code class="code-sample">grid__item--fixed-width</code>
+      </div>
+    </div>
 
-      <div class="grid">
-        <div class="grid__item">
-          <h3>Center aligned grid</h3>
-        </div>
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Vertically centered grid</h3>
       </div>
-      <div class="grid grid--center-aligned">
-        <div class="grid__item grid__item--fixed-width">
-          <code class="code-sample">grid__item--fixed-width</code>
-        </div>
-        <div class="grid__item grid__item--fixed-width">
-          <code class="code-sample">grid__item--fixed-width</code>
-        </div>
+    </div>
+    <div class="grid grid--vertically-centered">
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
       </div>
-    </section>
-  </body>
+      <div class="grid__item">
+        <code class="code-sample" style="height: 5rem;">grid__item</code>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Right aligned grid</h3>
+      </div>
+    </div>
+    <div class="grid grid--right-aligned">
+      <div class="grid__item grid__item--fixed-width">
+        <code class="code-sample">grid__item--fixed-width</code>
+      </div>
+      <div class="grid__item grid__item--fixed-width">
+        <code class="code-sample">grid__item--fixed-width</code>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Center aligned grid</h3>
+      </div>
+    </div>
+    <div class="grid grid--center-aligned">
+      <div class="grid__item grid__item--fixed-width">
+        <code class="code-sample">grid__item--fixed-width</code>
+      </div>
+      <div class="grid__item grid__item--fixed-width">
+        <code class="code-sample">grid__item--fixed-width</code>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Grid with more spacing</h3>
+      </div>
+    </div>
+    <div class="grid grid--more-spacing">
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Grid with less spacing</h3>
+      </div>
+    </div>
+    <div class="grid grid--less-spacing">
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid__item">
+        <h3>Grid with no spacing</h3>
+      </div>
+    </div>
+    <div class="grid grid--no-spacing">
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+      <div class="grid__item">
+        <code class="code-sample">grid__item</code>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
 </html>
