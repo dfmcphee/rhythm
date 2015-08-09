@@ -20,7 +20,7 @@
   flex-wrap: wrap;
 }
 
-.grid--vertically-aligned {
+.grid--vertically-centered {
   align-items: center;
 }
 
@@ -73,6 +73,30 @@
 .grid__item--full-width {
   flex-grow: 1;
   width: 100%;
+}
+
+.grid--more-spacing {
+  margin: -1 * $default-spacing--double 0 $default-spacing--double -1 * $default-spacing--double;
+
+  .grid__item {
+    padding: $default-spacing--double 0 0 $default-spacing--double;
+  }
+}
+
+.grid--less-spacing {
+  margin: -1 * $default-spacing--half 0 $default-spacing--half -1 * $default-spacing--half;
+
+  .grid__item {
+    padding: $default-spacing--half 0 0 $default-spacing--half;
+  }
+}
+
+.grid--no-spacing {
+  margin: 0;
+
+  .grid__item {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width : 580px) {

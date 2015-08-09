@@ -1,7 +1,13 @@
 $default-spacing: 1rem;
+$default-spacing--double: $default-spacing * 2;
+$default-spacing--half: $default-spacing / 2;
 
 $max-width: 40rem;
 $max-width--large: 60rem;
 
 $body-color: $dark-grey;
 $heading-color: $dark-purple;
+
+$primary: $dark-purple;
+$secondary: $medium-purple;
+$info: $light-purple;
