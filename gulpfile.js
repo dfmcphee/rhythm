@@ -19,6 +19,13 @@ gulp.task('build-ejs', function () {
 });
 
 gulp.task('build-sass', function () {
+  gulp.src('./app/assets/stylesheets/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./dist/css'));
   gulp.src('./app/assets/stylesheets/rhythm.scss')
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(autoprefixer({
