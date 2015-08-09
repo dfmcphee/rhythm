@@ -34,7 +34,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.grid--vertically-aligned {
+.grid--vertically-centered {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -97,6 +97,21 @@ img {
   -ms-flex-positive: 1;
   flex-grow: 1;
   width: 100%; }
+
+.grid--more-spacing {
+  margin: -2rem 0 2rem -2rem; }
+  .grid--more-spacing .grid__item {
+    padding: 2rem 0 0 2rem; }
+
+.grid--less-spacing {
+  margin: -0.5rem 0 0.5rem -0.5rem; }
+  .grid--less-spacing .grid__item {
+    padding: 0.5rem 0 0 0.5rem; }
+
+.grid--no-spacing {
+  margin: 0; }
+  .grid--no-spacing .grid__item {
+    padding: 0; }
 
 @media only screen and (max-width: 580px) {
   .grid {
